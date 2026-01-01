@@ -67,7 +67,7 @@ This plugin is free to use. If it saves you time or makes your work easier, cons
 
 
 
-# 🖊️ BallpenTool (FR)
+# 🖊️ Stylo (FR)
 
 BallpenTool est une extension pour l’éditeur de polices [Glyphs](http://glyphsapp.com/).
 Elle ajoute à Glyphs un outil Stylo bille personnalisé, offrant un trait régulier à largeur fixe, avec des terminaisons arrondies.
