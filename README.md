@@ -1,12 +1,12 @@
 # 🖊️ BallpenTool (EN)
 
+![Tool preview](BallpenToolCover.png "BallpenTool cover")
+
 This is a plugin for the [Glyphs font editor](http://glyphsapp.com/).  
 It adds a custom Ballpen (ballpoint pen) Tool to Glyphs, providing a smooth, consistent stroke with a fixed width and rounded stroke endings.
 The Ballpen Tool is ideal for clean sketching, monoline-lettering work, and designing typefaces with uniform stroke widths.
 You can adjust both thickness and smoothing directly from the companion palette.
 After installation, it will appear in the toolbar with a ballpen icon.
-
-![Tool preview](BallpenToolCover.png "BallpenTool cover")
 
 
 ## Installation
@@ -23,6 +23,8 @@ After installation, it will appear in the toolbar with a ballpen icon.
 3. Click and drag in the editor to draw paths freely.
 
 The tool generates monoline strokes with rounded ends, following your movements for quick sketching and clean outlines.
+
+![Using the Ballpen Tool in Edit View.](BallpenTool.png "BallpenTool in action")
 
 
 ## Ballpen Tool Palette
@@ -65,9 +67,9 @@ This plugin is free to use. If it saves you time or makes your work easier, cons
 ---
 
 
-
-
 # 🖊️ BallpenTool (FR)
+
+![Tool preview](BallpenToolCover.png "BallpenTool cover")
 
 BallpenTool est une extension pour l’éditeur de polices [Glyphs](http://glyphsapp.com/).
 Elle ajoute à Glyphs un outil Stylo bille personnalisé, offrant un trait régulier à largeur fixe, avec des terminaisons arrondies.
@@ -90,6 +92,8 @@ Une fois installé, l’outil apparaît dans la barre d’outils avec une icône
 3. Cliquez et faites glisser dans la fenêtre d’édition pour dessiner librement des contours.
 
 L’outil crée des tracés monolinéaires à extrémités arrondies, adaptés à un dessin fluide et propre directement sur le glyphe.
+
+![Using the Ballpen Tool in Edit View.](BallpenTool.png "BallpenTool in action")
 
 
 ## Palette de l’outil Stylo bille
