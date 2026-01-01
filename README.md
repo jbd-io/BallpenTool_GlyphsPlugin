@@ -12,7 +12,7 @@ After installation, it will appear in the toolbar with a ballpen icon.
 ### Installation
 
 1. Download the complete ZIP file and unpack it, or clone the repository.
-2. Double click the .glyphsPlugin file. Confirm the dialog that appears in Glyphs.
+2. Double click the `.glyphsPlugin` file. Confirm the dialog that appears in Glyphs.
 3. Restart Glyphs.
 
 
@@ -69,7 +69,7 @@ Une fois installé, l’outil apparaît dans la barre d’outils avec une icône
 ### Installation
 
 1. Téléchargez le fichier ZIP complet et décompressez-le, ou clonez le dépôt.
-2. Double-cliquez sur le fichier .glyphsPlugin. Confirmez le message qui s’affiche dans Glyphs.
+2. Double-cliquez sur le fichier `.glyphsPlugin`. Confirmez le message qui s’affiche dans Glyphs.
 3. Redémarrez Glyphs.
 
 
