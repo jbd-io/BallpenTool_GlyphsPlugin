@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="24412" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24412"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BallPenToolVariables">
+            <connections>
+                <outlet property="dialog" destination="1" id="Tkv-lP-HY5"/>
+                <outlet property="smoothingLabel" destination="byC-Eh-HfA" id="wCo-IG-d6G"/>
+                <outlet property="smoothingSlider" destination="0eQ-bF-3xd" id="cTN-qT-2QD"/>
+                <outlet property="thicknessLabel" destination="Sby-iy-r9Y" id="L0V-r6-NZW"/>
+                <outlet property="thicknessSlider" destination="26u-Z4-rLM" id="JyL-GC-8Hv"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="1" customClass="GSPaletteView">
+            <rect key="frame" x="0.0" y="0.0" width="165" height="194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="26u-Z4-rLM">
+                    <rect key="frame" x="53" y="59" width="60" height="28"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" controlSize="mini" continuous="YES" state="on" alignment="left" minValue="2" maxValue="80" doubleValue="20" tickMarkPosition="above" sliderType="linear" id="UoH-hs-hXe"/>
+                    <connections>
+                        <action selector="thicknessChanged:" target="-2" id="KMm-cM-3WB"/>
+                    </connections>
+                </slider>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sby-iy-r9Y">
+                    <rect key="frame" x="8" y="83" width="143" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Épaisseur : 20 " id="ZKr-Qf-SeK">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="selectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eQ-bF-3xd">
+                    <rect key="frame" x="53" y="12" width="60" height="28"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <sliderCell key="cell" controlSize="mini" continuous="YES" alignment="left" minValue="2" maxValue="12" doubleValue="6" tickMarkPosition="above" sliderType="linear" id="FUx-Hl-ELV"/>
+                    <connections>
+                        <action selector="smoothingChanged:" target="-2" id="XKa-Jq-3H5"/>
+                    </connections>
+                </slider>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvU-VM-Nhg">
+                    <rect key="frame" x="8" y="56" width="34" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="thickness_low" id="3EB-g7-qFT"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="96j-aD-ffB">
+                    <rect key="frame" x="123" y="56" width="34" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="thickness_high" id="QuN-ut-RwM"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0hy-k4-m6U">
+                    <rect key="frame" x="8" y="8" width="34" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="smoothness_low" id="KoN-xU-xv6"/>
+                </imageView>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U53-Kf-Gzo">
+                    <rect key="frame" x="123" y="8" width="34" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="smoothness_high" id="eoG-Ef-yLm"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="byC-Eh-HfA">
+                    <rect key="frame" x="8" y="35" width="143" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Lissage : 6" id="IkQ-yr-nV9">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="selectedControlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EOx-Yp-5vF">
+                    <rect key="frame" x="32" y="108" width="100" height="82"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="BallPen_icon" id="xzp-bd-PYi"/>
+                </imageView>
+            </subviews>
+            <point key="canvasLocation" x="-60.5" y="82"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="BallPen_icon" width="80" height="76"/>
+        <image name="smoothness_high" width="34" height="34"/>
+        <image name="smoothness_low" width="34" height="34"/>
+        <image name="thickness_high" width="34" height="34"/>
+        <image name="thickness_low" width="34" height="34"/>
+    </resources>
+</document>
